@@ -31,6 +31,7 @@ typedef void (*on_inactive_t)(void *);      // 该模式处于inactive状态时�
 typedef enum _navigator_mode_id{
     MODE_TAKEOFF = 0,
     MODE_LAND,
-    MODE_RTL
+    MODE_RTL,
+    MODE_NULL = 255
 }navigator_mode_id;
 #endif //__NAVIGATOR_MODE_H__

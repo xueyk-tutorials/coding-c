@@ -10,6 +10,8 @@ typedef struct _land {
     on_active_t       on_active;
     on_inactivation_t on_inactivation;
     on_inactive_t     on_inactive;
+
+    navigator_t *navigator;
 } land_t;
 
 land_t *land_construct(navigator_t *navigator);
