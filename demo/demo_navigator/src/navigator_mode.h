@@ -9,6 +9,10 @@
 #define false 0
 typedef int bool;
 
+//
+void param_init();
+int get_param_mis_takeoff_alt();
+//
 typedef struct _navigator navigator_t;
 struct _navigator
 {

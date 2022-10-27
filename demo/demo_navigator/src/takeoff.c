@@ -5,6 +5,7 @@ static navigator_t *g_navigator;
 
 static void set_takeoff_position(takeoff_t *this){
     printf("[takeoff, set_takeoff_position\n");
+    get_param_mis_takeoff_alt();
 }
 
 static void on_activation(void *this)

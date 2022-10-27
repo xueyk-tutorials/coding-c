@@ -28,12 +28,15 @@ void navigator_printf(navigator_t *navigator){
 }
 static void navigator_init(){
 
+    get_param_mis_takeoff_alt();
     //
     // memset(flag_mode_enable, 0, sizeof(flag_mode_enable));
 }
 
 void main_entry() {
     printf("navigator, main_entry()\n");
+    // 初始化参数
+    param_init();
     // 初始化navigator
     navigator_init();
     navigator.global_pos = 10;
